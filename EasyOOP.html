@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="easy.css">
+<meta charset="UTF-8">
+<title>LCGC Customer Input Module</title>
+</head>
+<body>
+<img class="fl" src="LCGC-Flower230x225.png" alt="snap">
+<header>
+  <h1>Living Color Garden Center Customer Input</h1>
+  Keeping objects clear and focused on a single task</header>
+<div>
+  <h2>Entering Data into a Table and Retrieving it</h2>
+</div>
+<div>Data are entered will only be used by Living Color Garden Center to promote benefits to our loyalty customers.  This information will not sold or used for any other purposes.</div>
+<br />
+<form action="Client.php" method="post" target="feedback">
+  <div><strong>Customer Contact Information:</strong><br />
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name">
+    <br />
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name">
+    <br />
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <br />
+    <label for="phone">Phone:</label>
+    <input type="phone" name="phone" id="phone">
+    <br />
+    <label for="street">Street:</label>
+    <input type="street" name="street" id="street">
+    <br />
+    <label for="city">City:</label>
+    <input type="city" name="city" id="city">
+    <br />
+    <label for="state">State:</label>
+    <input type="state" name="state" id="state">
+    <br />
+    <label for="zip">Zip:</label>
+    <input type="zip" name="zip" id="zip">
+    <br />
+    <label for="dob">Birthday:</label>
+    <input type="date" name="dob" id="dob">
+  <p />
+  </div>
+  <div><strong>Choice Question goes here (What season is your favorite?)</strong><br />
+    <input type="radio" name="choice" id="winter" value="Winter">
+    <label for="winter">Winter:</label>
+    <br />
+    <input type="radio" name="choice" id="spring" value="Spring">
+    <label for="spring">Spring:</label>
+    <br />
+    <input type="radio" name="choice" id="summer" value="Summer">
+    <label for="summer">Summer:</label>
+    <br />
+    <input type="radio" name="choice" id="autumn" value="Autumn">
+    <label for="autumn">Autumn:</label>
+  </div>
+  <br />
+  <div>
+    <input type="submit" name="insert" value="Insert Data into Table">
+  </div>
+</form>
+<p />
+<div><strong>Display All Data in Table with a new Form</strong>
+  <p />
+  <form action="Client.php" method="post" target="feedback">
+    <input type="submit" name="all" value="Display all data">
+  </form>
+</div>
+<br />
+The PHP class uses 11 MySql fields to store and retrieve the information:
+<ul>
+  <li>id</li>
+  <li>first_name</li>
+  <li>last_name</li>
+  <li>email</li>
+  <li>phone</li>
+  <li>street</li>
+  <li>city</li>
+  <li>state</li>
+  <li>zip</li>
+  <li>dob</li>
+  <li>choice</li>
+</ul>
+<iframe name="feedback" seamless width="325" height="200">PHP</iframe>
+<div>
+  <p>
+  <a href="EasyUpdateOOP.html">Update and Drop Files</a>
+  </p>
+</div>
+</body>
+</html>
